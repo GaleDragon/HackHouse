@@ -3,7 +3,7 @@ class HouseController:
 	# maybe each thread should run on a single pi unit, and then check for commands on the server?
 	pass
 
-class RoomListener:
+class RoomListener(object):
 	#startup sequence
 	def __init__(self):
 		self.quiet = False
@@ -18,10 +18,9 @@ class RoomListener:
 		
 	#basically, how does the object listen for voice commands and move between quiet and loud modes?
 	def listen(self):
-		if self.quiet == True
-			listen_for_loud()
-		if self.quiet == False:
-			get_command():
+		# Jeremy: Essentially, with reactive behaviors, everything is in a while loop
+		# that keeps checking and checking and checking
+		pass
 			
 
 	#Example of simple call to room unit
@@ -29,9 +28,12 @@ class RoomListener:
 		pass
   
 	def shades(self, state):
-		if state == "open":
-			self.call_to_arduino()
-		elif state == "close":
-			self.call_to_arduino() 
+		pass
+		
+		
+		
+if __name__=='__main__':
+	R = RoomLstener()
+	del R
 						
 		
